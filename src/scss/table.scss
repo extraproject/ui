@@ -1,0 +1,40 @@
+.table{
+  font-size:14px;
+  width:100%;
+  height:100%;
+  padding-top:2.5rem;
+  padding-bottom:2.8rem;
+  box-sizing: border-box;
+  overflow:hidden;
+  table{
+    width:100%;
+    th{
+      color:#277EC9;
+    }
+    td{
+      color:#666;
+      border-bottom:1px solid #eee;
+    }
+    th,td{
+      padding:0.5rem;
+      font-weight:200;
+    }
+  }
+  .table-head{
+    border-top:1px solid #277EC9;
+    border-bottom:1px solid #eee;
+    height:2.5rem;
+    margin-top:-2.5rem;
+    table{
+      height:100%;
+    }
+  }
+  .table-body{
+    height:100%;
+    overflow:auto;
+  }
+  .table-footer{
+    height:2.8rem;
+    border-top:1px solid #eee;
+  }
+}

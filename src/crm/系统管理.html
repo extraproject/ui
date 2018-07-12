@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>用户管理</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_743267_99n7l0q26h8.css">
+</head>
+
+<body>
+  <div class="crm-page">
+    <header class="crm-page-header">
+      <ul class="row h">
+        <li class="col v-m">
+          <a href="javascript:;" class="crm-phone-menu">
+            <span class="iconfont icon-sort"></span>
+          </a>
+        </li>
+        <li class="col v-m">
+          <h1 class="crm-logo">综合后台管理系统</h1>
+        </li>
+        <li class="col v-m t-r">
+          <div class="crm-user">
+            <img class="v-m" src="http://pm.longrise.cn:8001/LPOM/LEAP/Download/default/2017/3/28/f1f4721f0b4c405499d44879b90bca60/_v3_/face.jpg"
+              alt="">
+            <span class="v-m">刘勇</span>
+            <span class="v-m iconfont icon-unfold"></span>
+            <div class="crm-user-more">
+              <div class="crm-user-list">
+                <a href="#">注销登录</a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <aside class="crm-page-aside">
+      <ul class="crm-menu">
+        <li class="crm-menu-item">
+          <a href="index.html" class="crm-menu-link">
+            <span class="iconfont icon-shouye"></span>
+            <span>首页</span>
+          </a>
+        </li>
+        <li class="crm-menu-item">
+          <a href="我的任务.html" class="crm-menu-link">
+            <span class="iconfont icon-renwu"></span>
+            <span>我的任务</span>
+          </a>
+        </li>
+        <li class="crm-menu-item">
+          <a href="服务评价.html" class="crm-menu-link">
+            <span class="iconfont icon-fuwupingjia"></span>
+            <span>服务评价</span>
+          </a>
+        </li>
+        <li class="crm-menu-item">
+          <a href="项目受理.html" class="crm-menu-link">
+            <span class="iconfont icon-xiangmuguanli"></span>
+            <span>项目受理</span>
+          </a>
+        </li>
+        <li class="crm-menu-item">
+          <a href="合同签署.html" class="crm-menu-link">
+            <span class="iconfont icon-hetong"></span>
+            <span>合同签署</span>
+          </a>
+        </li>
+        <li class="crm-menu-item">
+          <a href="单位受理.html" class="crm-menu-link">
+            <span class="iconfont icon-loufang"></span>
+            <span>单位受理</span>
+          </a>
+        </li>
+        <li class="crm-menu-item">
+          <a href="服务受理.html" class="crm-menu-link">
+            <span class="iconfont icon-msnui-service"></span>
+            <span>服务受理</span>
+          </a>
+        </li>
+        <li class="crm-menu-item">
+          <a href="服务缴费.html" class="crm-menu-link">
+            <span class="iconfont icon-jiaofei"></span>
+            <span>服务缴费</span>
+          </a>
+        </li>
+        <li class="crm-menu-item">
+          <a href="资料发送.html" class="crm-menu-link">
+            <span class="iconfont icon-ziliao"></span>
+            <span>资料发送</span>
+          </a>
+        </li>
+        <li class="crm-menu-item">
+          <a href="用户管理.html" class="crm-menu-link">
+            <span class="iconfont icon-yonghu"></span>
+            <span>用户管理</span>
+          </a>
+        </li>
+        <li class="crm-menu-item active">
+          <a href="系统管理.html" class="crm-menu-link">
+            <span class="iconfont icon-xitong"></span>
+            <span>系统管理</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <section class="crm-page-content crm-has-search">
+      <div class="ly-panel crm-search">
+        <div class="row h">
+          <div class="col g-8 v-m">
+            <p class="router">
+              当前位置：
+              <a href="#">用户管理</a>
+              <a href="#">管理员信息</a>
+            </p>
+          </div>
+          <div class="col g-16 v-m t-r">
+            <a href="#" class="ly-button primary conner medium" onclick="showpop('addmanage')">增加管理员</a>
+            <a href="#" class="ly-button danger conner medium" onclick="showpop('editpassword')">修改密码</a>
+            <a href="#" class="ly-button warning conner medium" onclick="window.location.href='权限设置.html'">权限设置</a>
+            <a href="#" class="ly-button success conner medium" onclick="window.location.href='查看日志.html'">查看日志</a>
+          </div>
+        </div>
+      </div>
+      <div class="crm-page-scroller">
+        <div class="ly-panel" style="padding:0">
+          <div class="table">
+            <div class="table-head">
+              <table>
+                <colgroup>
+                  <col width="5%">
+                  <col width="10%">
+                  <col width="10%">
+                  <col width="10%">
+                  <col width="20%">
+                  <col width="15%">
+                  <col width="20%">
+                  <col width="10%">
+                </colgroup>
+                <tr>
+                  <th align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label">全选</span>
+                    </label>
+                  </th>
+                  <th>用户名</th>
+                  <th>性别</th>
+                  <th>所属部门</th>
+                  <th>职工编号</th>
+                  <th>联系方式</th>
+                  <th>创建日期</th>
+                  <th>操作</th>
+                </tr>
+              </table>
+            </div>
+            <div class="table-body">
+              <table>
+                <colgroup>
+                  <col width="5%">
+                  <col width="10%">
+                  <col width="10%">
+                  <col width="10%">
+                  <col width="20%">
+                  <col width="15%">
+                  <col width="20%">
+                  <col width="10%">
+                </colgroup>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td align="center">张明好</td>
+                  <td align="center">男</td>
+                  <td align="center">信息工程部</td>
+                  <td align="center">24515182010120745</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">2018年08月25日</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">查看</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td align="center">王晶</td>
+                  <td align="center">女</td>
+                  <td align="center">信息工程部</td>
+                  <td align="center">24515182010120745</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">2018年08月25日</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">查看</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td align="center">张杰</td>
+                  <td align="center">男</td>
+                  <td align="center">信息工程部</td>
+                  <td align="center">24515182010120745</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">2018年08月25日</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">查看</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td align="center">张明好</td>
+                  <td align="center">男</td>
+                  <td align="center">信息工程部</td>
+                  <td align="center">24515182010120745</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">2018年08月25日</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">查看</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td align="center">张明好</td>
+                  <td align="center">男</td>
+                  <td align="center">信息工程部</td>
+                  <td align="center">24515182010120745</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">2018年08月25日</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">查看</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td align="center">张明好</td>
+                  <td align="center">男</td>
+                  <td align="center">信息工程部</td>
+                  <td align="center">24515182010120745</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">2018年08月25日</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">查看</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="table-footer">
+              <ul class="row h">
+                <li class="col v-m"></li>
+                <li class="col v-m t-r">
+                  <div class="paging">
+                    <a href="#">首页</a>
+                    <a href="#">上一页</a>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <a href="#">下一页</a>
+                    <a href="#">末页</a>
+                    <input type="number">
+                    <button>跳转</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="mask"></div>
+  <div class="pop" id="addmanage">
+    <div class="pop-head">
+      <ul class="row h">
+        <li class="col v-m">
+          <h2 class="pop-title">增加管理员</h2>
+        </li>
+        <li class="col v-m t-r">
+          <a href="javascript:;" class="iconfont icon-close"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="pop-body">
+      <h2 class="pop-title">基本信息</h2>
+      <ul class="form margin">
+        <li class="form-item g-12">
+          <h2 class="form-label" style="width:6em;">
+            <span class="need">*</span>用户名：</h2>
+          <div class="form-value">
+            <div class="input g-24" style="width:260px;">
+              <input type="text">
+            </div>
+          </div>
+        </li>
+        <li class="form-item g-12">
+          <h2 class="form-label" style="width:6em;">
+            <span class="need">*</span>联系电话：</h2>
+          <div class="form-value">
+            <div class="input g-24" style="width:260px;">
+              <input type="text">
+            </div>
+          </div>
+        </li>
+        <li class="form-item g-12">
+          <h2 class="form-label" style="width:6em;">
+            <span class="need">*</span>性别：</h2>
+          <div class="form-value">
+            <div class="input g-24" style="width:260px;">
+              <input type="text">
+            </div>
+          </div>
+        </li>
+        <li class="form-item g-12">
+          <h2 class="form-label" style="width:6em;">
+            <span class="need">*</span>身份证号：</h2>
+          <div class="form-value">
+            <div class="input g-24" style="width:260px;">
+              <input type="text">
+            </div>
+          </div>
+        </li>
+        <li class="form-item g-12">
+          <h2 class="form-label" style="width:6em;">
+            <span class="need">*</span>职工编号：</h2>
+          <div class="form-value">
+            <div class="input" style="width:260px;">
+              <input type="text">
+            </div>
+          </div>
+        </li>
+      </ul>
+      <h2 class="pop-title">设置账号密码</h2>
+      <ul class="form margin">
+        <li class="form-item g-12">
+          <h2 class="form-label" style="width:6em;">
+            <span class="need">*</span>账号：</h2>
+          <div class="form-value">
+            <div class="input g-24" style="width:260px;">
+              <input type="text">
+            </div>
+          </div>
+        </li>
+        <li class="form-item g-12">
+          <h2 class="form-label" style="width:6em;">
+            <span class="need">*</span>登录密码：</h2>
+          <div class="form-value">
+            <div class="input g-24" style="width:260px;">
+              <input type="text">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="pop-footer">
+      <a href="#" class="ly-button conner info">取消</a>
+      <a href="#" class="ly-button conner primary">确认</a>
+    </div>
+  </div>
+  <div class="pop" id="editpassword" style="width:400px;">
+    <div class="pop-head">
+      <ul class="row h">
+        <li class="col v-m">
+          <h2 class="pop-title">修改用户登录密码</h2>
+        </li>
+        <li class="col v-m t-r">
+          <a href="javascript:;" class="iconfont icon-close"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="pop-body">
+      <h2 class="pop-title">账号信息</h2>
+      <ul class="form margin">
+        <li class="form-item g-24">
+          <h2 class="form-label" style="width:6em;">
+            <span class="need">*</span>账号：</h2>
+          <div class="form-value">
+            <div class="input g-24" style="width:350px;">
+              <input type="text">
+            </div>
+          </div>
+        </li>
+        <li class="form-item g-24">
+          <h2 class="form-label" style="width:6em;">
+            <span class="need">*</span>重置密码：</h2>
+          <div class="form-value">
+            <div class="input g-24" style="width:350px;">
+              <input type="text">
+            </div>
+          </div>
+        </li>
+        <li class="form-item g-24">
+          <h2 class="form-label" style="width:6em;">
+            <span class="need">*</span>确认密码：</h2>
+          <div class="form-value">
+            <div class="input g-24" style="width:350px;">
+              <input type="text">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="pop-footer">
+      <a href="#" class="ly-button conner info">取消</a>
+      <a href="#" class="ly-button conner primary">确认</a>
+    </div>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.nanoscroller.min.js"></script>
+  <script src="laydate/laydate.js"></script>
+  <script src="js/crm.js"></script>
+</body>
+
+</html>

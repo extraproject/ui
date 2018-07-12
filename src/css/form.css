@@ -1,0 +1,22 @@
+.form {
+  font-size: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle; }
+  .form.margin .form-item {
+    margin: 0.5rem 0; }
+  .form .form-item {
+    display: inline-block;
+    vertical-align: middle; }
+    .form .form-item .form-label, .form .form-item .form-value {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      color: inherit;
+      font-weight: 200;
+      padding-right: 0.5rem; }
+    .form .form-item .need {
+      color: #f00;
+      margin-right: 0.2rem; }
+
+/*# sourceMappingURL=form.css.map */

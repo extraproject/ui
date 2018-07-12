@@ -1,0 +1,26 @@
+.input{
+  display:inline-block;
+  width:100%;
+  input{
+    font-size:inherit;
+    border:1px solid #eee;
+    padding:0.5rem;
+    border-radius:0.2rem;
+    outline:none;
+    transition:0.3s;
+    font-weight:200;
+    width:100%;
+    box-sizing: border-box;
+    &::-webkit-input-placeholder{
+      color:#999;
+    }
+    &:focus{
+      border-color:#3293E5;
+    }
+  }
+  &.medium{
+    input{
+      padding:0.3rem 0.5rem;
+    }
+  }
+}

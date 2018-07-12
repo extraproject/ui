@@ -1,0 +1,38 @@
+.crm-survey{
+  font-size:0.7rem;
+  background:#fff;
+  text-decoration:none;
+  height:5rem;
+  position: relative;
+  .col{
+    .iconfont{
+      font-size:2rem;
+      display:inline-block;
+      width:3rem;
+      height:3rem;
+      line-height:3rem;
+      text-align:center;
+      border-radius:50%;
+      color:#fff;
+    }
+    &:first-child{
+      width:50%;
+      text-align:center;
+    }
+    .num{
+      font-size:1.8rem;
+      margin:0;
+      font-weight:200;
+      .unit{
+        font-size:0.6rem;
+        color:#999;
+      }
+    }
+    h2{
+      margin:0;
+      font-size:0.7rem;
+      color:#666;
+      font-weight:200;
+    }
+  }
+}

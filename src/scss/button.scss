@@ -1,0 +1,76 @@
+.ly-button{
+  display:inline-block;
+  font-size:0.7rem;
+  padding:0.5rem 1.5rem;
+  border:1px solid transparent;
+  background-color:#42A5F5;
+  color:#fff;
+  font-weight:100;
+  outline:none;
+  transition:0.3s;
+  cursor: pointer;
+  text-align:center;
+  text-decoration:none;
+  .iconfont,.ly-button-label{
+    display:inline-block;
+    vertical-align: middle;
+  }
+  &.conner{
+    border-radius:0.2rem;
+  }
+  &.rounder{
+    border-radius:1rem;
+  }
+  &.block{
+    width:100%;
+  }
+  // 不同尺寸
+  &.mini{
+    padding:0.15rem 0.5rem;
+    .iconfont{
+      font-size:0.8rem;
+    }
+  }
+  &.small{
+    padding:0.2rem 1rem;
+    .iconfont{
+      font-size:0.9rem;
+    }
+  }
+  &.medium{
+    padding:0.3rem 1rem;
+    .iconfont{
+      font-size:1rem;
+    }
+  }
+  &.large{
+    padding:0.4rem 2rem;
+    .iconfont{
+      font-size:1.1rem;
+    }
+  }
+  // 不同主题
+  &.primary{
+    background-color:#42A5F5;
+  }
+  &.success{
+    background-color:#67C23A;
+  }
+  &.info{
+    background-color:#909399;
+  }
+  &.warning{
+    background-color:#E6A23C;
+  }
+  &.danger{
+    background-color:#F56C6C;
+  }
+  &:hover{
+    opacity:0.9;
+    filter:alpha(opacity=90);
+  }
+  &:active{
+    opacity:1;
+    filter:alpha(opacity=100);
+  }
+}

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>综合后台管理系统</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_733065_pmbtakcy1ps.css">
+</head>
+
+<body>
+  <div class="crm-page">
+    <header class="crm-page-header">
+      <ul class="row h">
+        <li class="col v-m">
+          <a href="javascript:;" class="crm-phone-menu">
+            <span class="iconfont icon-sort"></span>
+          </a>
+        </li>
+        <li class="col v-m">
+          <h1 class="crm-logo">综合后台管理系统</h1>
+        </li>
+        <li class="col v-m t-r">
+          <div class="crm-user">
+            <img class="v-m" src="http://pm.longrise.cn:8001/LPOM/LEAP/Download/default/2017/3/28/f1f4721f0b4c405499d44879b90bca60/_v3_/face.jpg"
+              alt="">
+            <span class="v-m">刘勇</span>
+            <span class="v-m iconfont icon-unfold"></span>
+            <div class="crm-user-more">
+              <div class="crm-user-list">
+                <a href="#">注销登录</a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <aside class="crm-page-aside">
+      <ul class="crm-menu">
+        <li class="crm-menu-item">
+          <a href="#" class="crm-menu-link">
+            <span class="iconfont icon-send"></span>
+            <span>项目查询</span>
+            <span class="iconfont icon-right t-c"></span>
+          </a>
+          <div class="crm-menu-content">
+            <ul class="crm-menu">
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">项目详情</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">阶段环节</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="crm-menu-item">
+          <a href="#" class="crm-menu-link">
+            <span class="iconfont icon-profile"></span>
+            <span>业务审批</span>
+            <span class="iconfont icon-right t-c"></span>
+          </a>
+          <div class="crm-menu-content">
+            <ul class="crm-menu">
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">单位认证审核</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">项目受理审核</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">专题服务受理审核</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">缴费确认审核</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">项目成果邀请领取确定</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="crm-menu-item">
+          <a href="#" class="crm-menu-link">
+            <span class="iconfont icon-all"></span>
+            <span>用户管理</span>
+            <span class="iconfont icon-right t-c"></span>
+          </a>
+          <div class="crm-menu-content">
+            <ul class="crm-menu">
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">角色权限</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">增删查改</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">手机绑定信息</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">单位认证信息</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="crm-menu-item">
+          <a href="#" class="crm-menu-link">
+            <span class="iconfont icon-apps"></span>
+            <span>系统管理</span>
+            <span class="iconfont icon-right t-c"></span>
+          </a>
+          <div class="crm-menu-content">
+            <ul class="crm-menu">
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">日志管理</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">字典管理</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">接口管理</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">建议意见管理</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">评价管理</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">短信平台对接</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="crm-menu-item">
+          <a href="#" class="crm-menu-link">
+            <span class="iconfont icon-apps"></span>
+            <span>业务通知</span>
+            <span class="iconfont icon-right t-c"></span>
+          </a>
+          <div class="crm-menu-content">
+            <ul class="crm-menu">
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">单位认证结果通知</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">项目受理结果通知</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">专题服务受理结果通知</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">缴费结果通知</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">项目成果领取通知</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">邮寄通知</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">评价通知</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="crm-menu-item">
+          <a href="#" class="crm-menu-link">
+            <span class="iconfont icon-apps"></span>
+            <span>普通通知</span>
+            <span class="iconfont icon-right t-c"></span>
+          </a>
+          <div class="crm-menu-content">
+            <ul class="crm-menu">
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">手动推送通知</a>
+              </li>
+              <li class="crm-menu-item">
+                <a href="#" class="crm-menu-link">新闻类通知</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="crm-menu-item">
+          <a href="#" class="crm-menu-link">
+            <span class="iconfont icon-apps"></span>
+            <span>通知查询</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <section class="crm-page-content crm-has-search">
+      <div class="ly-panel crm-search">
+        <div class="row h">
+          <div class="col g-18 v-m">
+            <ul class="form">
+              <li class="form-item">
+                <h2 class="form-label">开始时间：</h2>
+                <div class="form-value">
+                  <div class="input">
+                    <input type="text" id="start" placeholder="请选择开始时间">
+                  </div>
+                </div>
+              </li>
+              <li class="form-item">
+                <h2 class="form-label">结束时间：</h2>
+                <div class="form-value">
+                  <div class="input">
+                    <input type="text" id="end" placeholder="请选择结束时间">
+                  </div>
+                </div>
+              </li>
+              <li class="form-item">
+                <h2 class="form-label">单位名称：</h2>
+                <div class="form-value">
+                  <div class="input" style="width:300px;">
+                    <input type="text" placeholder="请填写单位名称">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col g-8 v-m t-r">
+            <a href="#" class="ly-button primary conner">查询</a>
+          </div>
+        </div>
+      </div>
+      <div class="crm-page-scroller">
+        <div class="ly-panel" style="padding:0">
+          <div class="table">
+            <div class="table-head">
+              <table>
+                <colgroup>
+                  <col width="5%">
+                  <col width="25%">
+                  <col width="15%">
+                  <col width="15%">
+                  <col width="10%">
+                  <col width="10%">
+                  <col width="10%">
+                  <col width="10%">
+                </colgroup>
+                <tr>
+                  <th align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label">全选</span>
+                    </label>
+                  </th>
+                  <th>项目名称</th>
+                  <th>项目编号</th>
+                  <th>申请日期</th>
+                  <th>申请人</th>
+                  <th>联系方式</th>
+                  <th>联系方式</th>
+                  <th>操作</th>
+                </tr>
+              </table>
+            </div>
+            <div class="table-body">
+              <table>
+                <colgroup>
+                  <col width="5%">
+                  <col width="25%">
+                  <col width="15%">
+                  <col width="15%">
+                  <col width="10%">
+                  <col width="10%">
+                  <col width="10%">
+                  <col width="10%">
+                </colgroup>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td>静安区工业园开发改造</td>
+                  <td align="center">75463389012</td>
+                  <td align="center">2018年08月26日</td>
+                  <td align="center">王明华</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">未受理</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">审核</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td>静安区工业园开发改造</td>
+                  <td align="center">75463389012</td>
+                  <td align="center">2018年08月26日</td>
+                  <td align="center">王明华</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">未受理</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">审核</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td>静安区工业园开发改造</td>
+                  <td align="center">75463389012</td>
+                  <td align="center">2018年08月26日</td>
+                  <td align="center">王明华</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">未受理</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">审核</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td>静安区工业园开发改造</td>
+                  <td align="center">75463389012</td>
+                  <td align="center">2018年08月26日</td>
+                  <td align="center">王明华</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">未受理</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">审核</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td>静安区工业园开发改造</td>
+                  <td align="center">75463389012</td>
+                  <td align="center">2018年08月26日</td>
+                  <td align="center">王明华</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">未受理</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">审核</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td>静安区工业园开发改造</td>
+                  <td align="center">75463389012</td>
+                  <td align="center">2018年08月26日</td>
+                  <td align="center">王明华</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">未受理</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">审核</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td>静安区工业园开发改造</td>
+                  <td align="center">75463389012</td>
+                  <td align="center">2018年08月26日</td>
+                  <td align="center">王明华</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">未受理</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">审核</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td>静安区工业园开发改造</td>
+                  <td align="center">75463389012</td>
+                  <td align="center">2018年08月26日</td>
+                  <td align="center">王明华</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">未受理</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">审核</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td>静安区工业园开发改造</td>
+                  <td align="center">75463389012</td>
+                  <td align="center">2018年08月26日</td>
+                  <td align="center">王明华</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">未受理</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">审核</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td>静安区工业园开发改造</td>
+                  <td align="center">75463389012</td>
+                  <td align="center">2018年08月26日</td>
+                  <td align="center">王明华</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">未受理</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">审核</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td>静安区工业园开发改造</td>
+                  <td align="center">75463389012</td>
+                  <td align="center">2018年08月26日</td>
+                  <td align="center">王明华</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">未受理</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">审核</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td>静安区工业园开发改造</td>
+                  <td align="center">75463389012</td>
+                  <td align="center">2018年08月26日</td>
+                  <td align="center">王明华</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">未受理</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">审核</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td>静安区工业园开发改造</td>
+                  <td align="center">75463389012</td>
+                  <td align="center">2018年08月26日</td>
+                  <td align="center">王明华</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">未受理</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">审核</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td>静安区工业园开发改造</td>
+                  <td align="center">75463389012</td>
+                  <td align="center">2018年08月26日</td>
+                  <td align="center">王明华</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">未受理</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">审核</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td>静安区工业园开发改造</td>
+                  <td align="center">75463389012</td>
+                  <td align="center">2018年08月26日</td>
+                  <td align="center">王明华</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">未受理</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">审核</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                      <span class="icon">
+                        <span class="iconfont icon-check1"></span>
+                      </span>
+                      <span class="label"></span>
+                    </label>
+                  </td>
+                  <td>静安区工业园开发改造</td>
+                  <td align="center">75463389012</td>
+                  <td align="center">2018年08月26日</td>
+                  <td align="center">王明华</td>
+                  <td align="center">138-7729-9596</td>
+                  <td align="center">未受理</td>
+                  <td align="center">
+                    <a href="#" class="ly-button primary small conner">审核</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="table-footer">
+              <ul class="row h">
+                <li class="col v-m"></li>
+                <li class="col v-m t-r">
+                  <div class="paging">
+                    <a href="#">首页</a>
+                    <a href="#">上一页</a>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <a href="#">下一页</a>
+                    <a href="#">末页</a>
+                    <input type="number">
+                    <button>跳转</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="mask"></div>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.nanoscroller.min.js"></script>
+  <script src="laydate/laydate.js"></script>
+  <script src="js/crm.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+.crm-page {
+  height: 100%;
+  width: 100%;
+  font-size: 0;
+  padding: 3rem 0 0 10rem;
+  box-sizing: border-box; }
+  .crm-page .crm-page-header {
+    height: 3rem;
+    background: #3293E5;
+    margin: -3rem 0 0 -10rem;
+    font-size: 0.7rem;
+    color: #fff;
+    font-weight: 200;
+    padding: 0 10px;
+    box-sizing: border-box; }
+    .crm-page .crm-page-header .col:first-child {
+      display: none; }
+    .crm-page .crm-page-header .col .crm-phone-menu {
+      text-decoration: none;
+      color: #fff; }
+      .crm-page .crm-page-header .col .crm-phone-menu .iconfont {
+        font-size: 1.4rem; }
+    .crm-page .crm-page-header .crm-logo {
+      display: inline-block;
+      margin: 0;
+      font-size: 1.2rem;
+      color: inherit; }
+    .crm-page .crm-page-header .crm-user {
+      font-size: inherit;
+      font-weight: 100;
+      cursor: pointer;
+      position: relative; }
+      .crm-page .crm-page-header .crm-user img {
+        width: 2rem;
+        border-radius: 50%; }
+      .crm-page .crm-page-header .crm-user:hover .crm-user-more {
+        display: block; }
+      .crm-page .crm-page-header .crm-user .crm-user-more {
+        display: none;
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        width: 6rem;
+        padding-top: 1.8rem;
+        z-index: 10; }
+        .crm-page .crm-page-header .crm-user .crm-user-more .crm-user-list {
+          box-shadow: 0 1px 5px #ccc;
+          background: #fff;
+          padding: 0.2rem;
+          position: relative;
+          border-radius: 0.2rem; }
+          .crm-page .crm-page-header .crm-user .crm-user-more .crm-user-list a {
+            text-decoration: none;
+            color: #666;
+            text-align: left;
+            display: block;
+            padding: 0.5rem; }
+            .crm-page .crm-page-header .crm-user .crm-user-more .crm-user-list a:hover {
+              color: #3293E5; }
+  .crm-page .crm-page-aside {
+    display: inline-block;
+    width: 10rem;
+    height: 100%;
+    background: #277EC9;
+    margin-left: -10rem;
+    overflow: hidden;
+    transition: 0.3s;
+    position: relative;
+    z-index: 100; }
+    .crm-page .crm-page-aside .crm-menu {
+      font-size: 14px;
+      color: #fff;
+      list-style: none;
+      padding: 0;
+      font-weight: 200;
+      margin: 0;
+      height: 100%;
+      overflow: auto; }
+      .crm-page .crm-page-aside .crm-menu .crm-menu-item.active .crm-menu-link {
+        background: #FA5F5B; }
+      .crm-page .crm-page-aside .crm-menu .crm-menu-item .crm-menu-link {
+        display: table;
+        color: inherit;
+        text-decoration: none;
+        width: 100%;
+        padding: 0.7rem;
+        border-bottom: 1px solid #2779BF; }
+        .crm-page .crm-page-aside .crm-menu .crm-menu-item .crm-menu-link span {
+          display: table-cell;
+          vertical-align: middle; }
+          .crm-page .crm-page-aside .crm-menu .crm-menu-item .crm-menu-link span:first-child {
+            width: 20%;
+            text-align: right;
+            padding-right: 0.5rem; }
+        .crm-page .crm-page-aside .crm-menu .crm-menu-item .crm-menu-link .iconfont {
+          font-size: 1rem; }
+        .crm-page .crm-page-aside .crm-menu .crm-menu-item .crm-menu-link .icon-right {
+          font-size: 0.7rem;
+          transition: 0.3s; }
+      .crm-page .crm-page-aside .crm-menu .crm-menu-item .crm-menu-content {
+        background: #1A6AC5;
+        display: none;
+        padding: 0.5rem 0;
+        padding-left: 3em; }
+        .crm-page .crm-page-aside .crm-menu .crm-menu-item .crm-menu-content .crm-menu-link {
+          border: none;
+          padding: 0.5rem 0; }
+      .crm-page .crm-page-aside .crm-menu .crm-menu-item.active .icon-right {
+        transform: rotate(90deg); }
+      .crm-page .crm-page-aside .crm-menu .crm-menu-item.active .crm-menu-content {
+        display: block; }
+  .crm-page .crm-page-content {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #f5f5f5;
+    padding: 0.5rem;
+    box-sizing: border-box; }
+    .crm-page .crm-page-content .crm-search {
+      height: 2.5rem;
+      margin-top: -3rem;
+      margin-bottom: 0.5rem;
+      padding: 0 0.5rem; }
+      .crm-page .crm-page-content .crm-search .ly-button {
+        margin-left: 0.5rem; }
+    .crm-page .crm-page-content .crm-footer {
+      height: 2rem;
+      margin-top: 0.5rem; }
+    .crm-page .crm-page-content .crm-page-scroller {
+      height: 100%;
+      width: 100%;
+      overflow: auto;
+      box-sizing: border-box; }
+    .crm-page .crm-page-content.crm-has-search {
+      padding-top: 3.5rem; }
+    .crm-page .crm-page-content.crm-has-footer {
+      padding-bottom: 3rem; }
+
+/*# sourceMappingURL=crm.css.map */

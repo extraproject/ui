@@ -1,0 +1,20 @@
+.title{
+  font-size:16px;
+  border-bottom:1px solid #eee;
+  padding:10px;
+  margin:0 10px;
+  font-weight:600;
+  color:#3293E5;
+  position: relative;
+  &:before{
+    content:"";
+    display:inline-block;
+    width:3px;
+    height:16px;
+    background:#3293E5;
+    position: absolute;
+    left:0;
+    top:50%;
+    margin-top:-8px;
+  }
+}
